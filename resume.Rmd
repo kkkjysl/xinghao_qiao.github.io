@@ -1,0 +1,75 @@
+---
+title: "About me"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+
+---
+<img src="images/WechatIMG42.jpeg" alt="My Photo" style="position: absolute; top: 10px; right: 10px; width: 80px; height: auto; border-radius: 0;">
+
+# ***EDUCATION***
+
+**COLUMBIA UNIVERSITY**
+
+**Master of Public Health, Major: Biostatistics**  
+**GPA:** 3.8/4.00 (current)  
+**Core Courses:** Applied Regression, Statistical Computing with SAS, Data Science, Analysis of Categorical Data, Epidemiology  
+
+---
+
+**UNIVERSITY OF NOTTINGHAM (UK | CHINA)**
+
+**Bachelor of Science, Major: Statistics**  
+2+2 Undergraduate Program (2019.09 - 2023.08)  
+**GPA:** 3.1/4.00  
+**Core Courses:** Statistics, Complex Functions, Mathematical Analysis, Foundation Algebra for Physical Sciences and Engineering, Foundation Calculus and Mathematical Techniques, Analytical and Computational Foundations  
+
+---
+
+# ***PROFESSIONAL EXPERIENCE***
+
+**IQVIA**  
+_Internship, IQVIA Management Consulting Intern_  
+Shanghai (05/2024 – 08/2024)  
+
+- Participated in the "National DTP Pharmacy Business Strategy Layout Project". Assisted management with thematic studies and desk research.
+- Conducted data collection and cleaning from the IQVIA database and local health departments. Researched market potential for six specific chronic diseases, using data from the IQVIA database, the National Bureau of Statistics, and provincial/municipal health departments.
+- Estimated market potential based on hospital and pharmacy sales, creating a Potential Matrix Pharmacy Stratified Circle Map for analysis.
+- Applied the P.A.S.S. model to help plan the pharmacy layout and standardized the KPI assessment criteria for the DTP pharmacy.
+
+**ByteDance Ltd**  
+_Part-time Assistant, Douyin E-commerce Department_  
+Remote (04/2022 – 05/2022)  
+
+- Completed professional training on data analytics for e-commerce, learning key indicators, analytical methods, and models.
+- Analyzed sales performance of snack brands on platforms like Taobao, Pingduoduo, and Jingdong; summarized popular brands and sales techniques, and generated insights for Douyin.
+- Conducted market research on China’s maternal and child industry; summarized consumer preferences, sales trends, and market concentration rates; developed a proposal for Douyin on partnering with mother and baby brands.
+
+**FTLife Insurance Company Limited**  
+_Intern, Guangdong–Hong Kong–Macau Greater Bay Area Project Team_  
+(02/2021 – 03/2021)  
+
+- Gained knowledge in financial modeling, business development, and project valuation; conducted quantitative analysis on China’s insurance and luxury industries.
+- Analyzed financial data of FTLife’s project partner, evaluating financial performance and summarizing key insights, which were used in research reports and presentations.
+
+---
+
+# ***PROJECT EXPERIENCE***
+
+**Course Project: Analysis of Marijuana's Influence on Mice**  
+(05/2021)  
+
+- Investigated the relationship between Marijuana, activity level, and body temperature of mice using the Control Variables Method and statistical software.
+- Utilized R to create histograms and Q-Q plots for data analysis; applied multiple statistical methods to study interactions between the three variables.
+
+---
+
+# ***SKILLS***
+
+**Computer Skills:** Python, R, SAS, MS Office  
+**Languages:** English, Chinese  
+
+
+
+

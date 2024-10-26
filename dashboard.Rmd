@@ -1,0 +1,89 @@
+---
+title: "dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(plotly)
+library(dplyr)
+library(p8105.datasets)
+library(flexdashboard)
+data("rest_inspec")
+
+colnames(rest_inspec)
+
+inspect <- rest_inspec |>
+  filter(!is.na(score), !is.na(boro), !is.na(cuisine_description), !is.na(violation_code)) |>
+  mutate(
+    inspection_date = as.Date(inspection_date),
+    grade = factor(grade, levels = c("A", "B", "C"))
+  )
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+scatter_plot <- inspect |>
+  sample_n(1000) |> # Sampling to ensure clarity in visualization
+  plot_ly(
+    x = ~cuisine_description, y = ~score, type = 'scatter', mode = 'markers',
+    marker = list(color = 'rgba(153, 102, 255, .7)', size = 5)
+  ) |>
+  layout(
+    title = "Scatter Plot: Cuisine Type vs Score",
+    xaxis = list(title = "Cuisine Type", tickangle = -45),
+    yaxis = list(title = "Score")
+  )
+
+scatter_plot
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+grade_distribution <- inspect |>
+  count(boro, grade) |>
+  plot_ly(
+    x = ~boro, y = ~n, color = ~grade, type = 'bar',
+    colors = c("blue", "green", "red")  # Hex colors with transparency
+  ) |>
+  layout(
+    title = "Bar Plot: Grade Distribution by Borough",
+    xaxis = list(title = "Borough"),
+    yaxis = list(title = "Frequency of Grades"),
+    barmode = "stack"
+  )
+
+grade_distribution
+```
+
+### Chart C
+
+```{r}
+box_plot_cuisine <- inspect |>
+  count(cuisine_description, sort = TRUE) |>
+  top_n(10, wt = n) |>
+  inner_join(inspect, by = "cuisine_description") |>
+  plot_ly(
+    x = ~cuisine_description, y = ~score, type = 'box',
+    boxpoints = 'none',  # Do not display individual points
+    marker = list(color = 'navy')  
+  ) |>
+  layout(
+    title = "Box Plot: Score by Cuisine Type (Top 10)",
+    xaxis = list(title = "Cuisine Type", tickangle = -45),
+    yaxis = list(title = "Inspection Score")
+  )
+
+box_plot_cuisine
+```
+

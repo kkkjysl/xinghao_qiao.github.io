@@ -1,0 +1,21 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Resume"
+      href: resume.html
+    - text: "Dashbard"
+      href: dashboard.html
+    - icon: fa-envelope fa-lg
+      text: "qxxhh123@163.com"
+      href: mailto:<qxxhh123@163.com>
+    - icon: fa-brands fa-weixin
+      text: "qxhkkk13"
+      href: qxhkkk13
+    - icon: fa-github fa-lg
+      text: "http://github.com/kkkjysl/"
+      href: http://github.com/kkkjysl/
+output:
+  html_document:
+    theme: cerulean
