@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "Resume"
       href: resume.html
-    - text: "Dashbard"
+    - text: "Dashboard"
       href: dashboard.html
     - icon: fa-envelope fa-lg
       text: "qxxhh123@163.com"
