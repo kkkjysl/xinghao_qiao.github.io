@@ -18,4 +18,4 @@ navbar:
       href: http://github.com/kkkjysl/
 output:
   html_document:
-    theme: Vapor
+    theme: Navbars
