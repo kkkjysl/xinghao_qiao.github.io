@@ -4,6 +4,7 @@ output:
   html_document:
     toc: true
     toc_float: true
+    
 
 ---
 <img src="images/WechatIMG42.jpeg" alt="My Photo" style="position: absolute; top: 10px; right: 10px; width: 80px; height: auto; border-radius: 0;">
@@ -24,7 +25,6 @@ Bachelor of Science, Major: Statistics, 2+2 Undergraduate Program
 # More information
 More information about academic and professional experience (i.e. resume) can be found in [About me](resume.html). 
 
-Additionally, the plots for homework 4, you can find [here](plot.html), dashboard can be found [here](dashboard.html).
 
 ---
 ## Links
@@ -33,4 +33,3 @@ Additionally, the plots for homework 4, you can find [here](plot.html), dashboar
 
 [About me](resume.html)
 
-[Plots](plot.html)
